@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelMitsui</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="./lib/css/animation.css">
+    <link rel="stylesheet" href="./lib/css/style.css">
+</head>
+
+<body class="">
+    <div class="wrapper">
+        <header class="header clearfix">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <div class="header__logo">
+                            <a href="./index.html">
+                                <img src="./images/logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="nav__menu">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="./rooms.html">
+                                    Phòng & Suite
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./restaurant.html">
+                                    Nhà hàng
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./spa.html">
+                                    Spa
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./experience.html">
+                                    Kinh nghiệm
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./about.html">
+                                    Về
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./location.html">
+                                    Vị trí
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./news.html">
+                                    Có gì mới không
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="groupbtn__content">
+                        <div class="nav-ultility">
+                            <ul class="nav-ultility__list">
+                                <li class="nav-ultility__item">
+                                    <button type="button" class="header-menu-trigger">Đặt phòng</button>
+                                </li>
+                                <li class="nav-ultility__item">
+                                    <button type="button" class="header-menu-trigger">Đặt bàn</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-toggle is-active">
+            <div class="menu-toggle__inner">
+                <div class="menu-toggle__col-1">
+                    <button type="button" data-menu="1" class="menu-toggle__btn-1 js-menu-trigger">
+                        <span class="menu-toggle__bar menu-toggle__bar--1"></span> 
+                        <span class="menu-toggle__bar menu-toggle__bar--2"></span> 
+                        <span class="menu-toggle__bar menu-toggle__bar--3"></span> 
+                        <span class="sr-only">Menu</span>
+                    </button>
+                </div>
+                <div class="menu-toggle__col-2">
+                    <ul class="menu-toggle__list">
+                        <li class="menu-toggle__item">
+                            <button type="button" data-menu="2" class="menu-toggle__btn-1 js-menu-trigger">
+                                Book a Room
+                            </button>
+                        </li>
+                        <li class="menu-toggle__item">
+                            <button type="button" data-menu="3" class="menu-toggle__btn-1 js-menu-trigger">
+                                Book a Table
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu__content menu__content--1 js-menu-content js-menu-content-1 ">
+                <div class="menu-base">
+                    <div class="menu-base__inner">
+                        <p class="menu-base__logo">
+                            <a href="" class="nuxt-link-exact-active nuxt-link-active" aria-current="page">
+                                <img src="./images/logo-white.svg" alt="">
+                            </a>
+                        </p>
+                        <ul class="menu-base__nav">
+                            <li class="menu-base__item">
+                                <a href="./index.html" class="nuxt-link-exact-active nuxt-link-active" aria-current="page">Home</a>
+                            </li>
+                            <li class="menu-base__item js-menu-ac-wrapper">
+                                <div class="menu-base__row">
+                                    <a href="./rooms.html" class="">Rooms and Suites</a>
+                                    <button type="button" class="menu-base__button js-menu-ac-trigger">
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="menu-base__content js-menu-ac-content">
+                                    <ul class="menu-base__list">
+                                        <li><a href="./room-detail.html" class="">Suites</a></li>
+                                        <li><a href="./room-detail.html" class="">Rooms</a></li>
+                                        <li><a href="./room-detail.html" class="">Accommodation Services</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-base__item js-menu-ac-wrapper">
+                                <div class="menu-base__row">
+                                    <a href="./restaurant.html" class="">Restaurants</a>
+                                    <button type="button" class="menu-base__button js-menu-ac-trigger">
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="menu-base__content js-menu-ac-content">
+                                    <ul class="menu-base__list">
+                                        <li><a href="./restaurant-detail.html" class="">TOKI</a></li>
+                                        <li><a href="./restaurant-detail.html" class="">YUI</a></li>
+                                        <li><a href="./restaurant-detail.html" class="">FORNI</a></li>
+                                        <li><a href="./restaurant-detail.html" class="">THE GARDEN BAR</a></li>
+                                        <li><a href="./restaurant-detail.html" class="">SHIKI-NO-MA</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-base__item js-menu-ac-wrapper">
+                                <div class="menu-base__row">
+                                    <a href="./spa.html" class="">SPA</a>
+                                    <button type="button" class="menu-base__button js-menu-ac-trigger">
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="menu-base__content js-menu-ac-content">
+                                    <ul class="menu-base__list">
+                                        <li><a href="./spa-detail.html" class="">SPA Treatments</a></li>
+                                        <li><a href="./spa-detail.html" class="">Thermal Spring</a></li>
+                                        <li><a href="./spa-detail.html" class="">Private Onsen</a></li>
+                                        <li><a href="./spa-detail.html" class="">Gym</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-base__item">
+                                <a href="./experience.html" class="">
+                                    <span>Experiences</span>
+                                </a>
+                            </li>
+                            <li class="menu-base__item js-menu-ac-wrapper">
+                                <div class="menu-base__row">
+                                    <a href="./about.html" class="">About</a>
+                                    <button type="button" class="menu-base__button js-menu-ac-trigger">
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="menu-base__content js-menu-ac-content">
+                                    <ul class="menu-base__list">
+                                        <li><a href="#" class="">The Kajiimiya Gate</a></li>
+                                        <li><a href="#" class="">The Garden</a></li>
+                                        <li><a href="#" class="">Designers/Artists</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-base__item">
+                                <a href="./location.html" class=""><span>Location</span></a>
+                            </li>
+                            <li class="menu-base__item">
+                                <a href="./news.html" class=""><span>What’s New</span></a>
+                            </li>
+                            <li class="menu-base__item">
+                                <a href="#" target="_blank"><span>Online Shop</span></a>
+                            </li>
+                            <li class="menu-base__item">
+                                <a href="./contact.html" class=""><span>Contact</span></a>
+                            </li>
+                        </ul>
+                        <p class="menu-base__star">
+                            <a href="" target="_blank">
+                                <img src="./images/icon-star-white.svg" alt=""></a>
+                        </p>
+                        <p class="menu-base__tel">
+                            TEL.
+                            <em><span data-action="call" data-tel="+81754683100">+81 75 468 3100</span></em></p>
+                        <p class="menu-base__address">
+                            284 Nijoaburanokoji-cho, Aburano-koji St. Nijo-sagaru,
+                            <br>Nakagyo-ku, Kyoto 604-0051
+                        </p>
+                        <ul class="menu-base__sns">
+                            <li>
+                                <a href="" target="_blank"><img src="./images/icon-instagram-white.svg" alt="Instagram"></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="./images/icon-facebook-white.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="menu-base__sns-lang"><a href="">Japanese</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__content menu__content--2 js-menu-content js-menu-content-2 ">
+                <div class="menu-reservation">
+                    <div class="menu-reservation__inner">
+                        <form id="ZenSearchFrom" action="" target="_blank">
+                            <p class="menu-reservation__close">
+                                <button type="button" class="js-menu-close">
+                                    <span class="sr-only">Close</span>
+                                </button>
+                            </p>
+                            <p class="menu-reservation__head menu-reservation__head--1">
+                                Book a Room
+                            </p>
+                            <div class="menu-reservation__row">
+                                <dl class="menu-reservation__list">
+                                    <div class="menu-reservation__item menu-reservation__item--col-1">
+                                        <dt>Check-in</dt>
+                                        <dd>
+                                            <input id="checkin_date" name="checkin_date" autocomplete="off" readonly="" aria-label="Use the arrow keys to pick a date" placeholder="Date">
+                                        </dd>
+                                    </div>
+                                    <div class="menu-reservation__item menu-reservation__item--col-2">
+                                        <dt>Number of Nights</dt>
+                                        <dd>
+                                            <select id="numOfNights">
+                                                <option value="1">1</option> 
+                                                <option value="2">2</option> 
+                                                <option value="3">3</option> 
+                                                <option value="4">4</option> 
+                                                <option value="5">5</option> 
+                                                <option value="6">6</option> 
+                                                <option value="7">7</option> 
+                                                <option value="8">8</option> 
+                                                <option value="9">9</option> 
+                                                <option value="10">10</option>
+                                            </select>
+                                        </dd>
+                                    </div>
+                                    <div class="menu-reservation__item menu-reservation__item--col-2">
+                                        <dt>Number of rooms</dt>
+                                        <dd><select name="rooms">
+                                            <option value="1">1 room(s)</option> 
+                                            <option value="2">2 room(s)</option> 
+                                            <option value="3">3 room(s)</option>
+                                        </select>
+                                        </dd>
+                                    </div>
+                                    <div class="menu-reservation__item menu-reservation__item--col-2">
+                                        <dt>Adults</dt>
+                                        <dd><select name="adults">
+                                            <option value="1" selected="">1 people</option> 
+                                            <option value="2">2 people</option> 
+                                            <option value="3">3 people</option>
+                                        </select>
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <p class="menu-reservation__btn">
+                                    <button type="submit">Room availability check</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__content menu__content--3 js-menu-content js-menu-content-3 ">
+                <div class="menu-reservation">
+                    <div class="menu-reservation__inner">
+                        <form id="z-book-table" action="#" target="_blank">
+                            <p class="menu-reservation__close">
+                                <button type="button" class="js-menu-close">
+                                    <span class="sr-only">Close</span>
+                                </button>
+                            </p>
+                            <p class="menu-reservation__head menu-reservation__head--1">
+                                Book a table
+                            </p>
+                            <div class="menu-reservation__row">
+                                <dl class="menu-reservation__list">
+                                    <div class="menu-reservation__item menu-reservation__item--col-1">
+                                        <dt>Check-in</dt>
+                                        <dd>
+                                            <input id="reservation-checkin_date" name="reservation checkin_date" autocomplete="off" readonly="" aria-label="Use the arrow keys to pick a date" placeholder="Date">
+                                        </dd>
+                                    </div>
+                                    <div class="menu-reservation__item menu-reservation__item--col-2">
+                                        <dt>Restaurant</dt>
+                                        <dd>
+                                            <select id="shop_id">
+                                                <option value="toki">TOKI / YUI</option> 
+                                                <option value="forni">FORNI</option> 
+                                            </select>
+                                        </dd>
+                                    </div>
+                                    <div class="menu-reservation__item menu-reservation__item--col-2">
+                                        <dt>Time</dt>
+                                        <dd>
+                                            <select name="reservation-star-time">
+                                                <option value="0">Time</option> 
+                                                <option value="1">11:00</option> 
+                                                <option value="2">11:30</option>
+                                            </select>
+                                        </dd>
+                                    </div>
+                                    <div class="menu-reservation__item menu-reservation__item--col-2">
+                                        <dt>People</dt>
+                                        <dd><select name="reservation-num-people">
+                                            <option value="0">People</option> 
+                                            <option value="1">1 people</option> 
+                                            <option value="2">2 people</option> 
+                                            <option value="3">3 people</option>
+                                        </select>
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <p class="menu-reservation__btn">
+                                    <button type="submit">Book now</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main page-to">
+            <section class="banner-page">
+                <div class="banner-page-slide">
+                    <div class="slick-slide">
+                        <div class="banner-slide__item" style="width:100%;display:inline-block;">
+                            <figure>
+                                <picture>
+                                    <img src="./images/dt-res.webp" alt="">
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="banner-slide__item" style="width:100%;display:inline-block;">
+                            <figure>
+                                <picture>
+                                    <img src="./images/dt-res2.webp" alt="">
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contents">
+                <div class="breadcrumbs breadcrumbs--top">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a href="/en/kyoto/" class="breadcrumbs__link nuxt-link-active">Home</a></li>
+                        <li class="breadcrumbs__item">
+                            <a href="/en/kyoto/thermal_springs-spa/" class="breadcrumbs__link nuxt-link-active">THERMAL SPRING SPA</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <em class="breadcrumbs__current">SPA Treatments</em>
+                        </li>
+                    </ol>
+                </div>
+                <div class="contents__inner container">
+                    <h1 class="head-1"><span>SPA Treatments</span></h1>
+
+                </div>
+            </section>
+
+            <section class="spa-detail --info">
+                <div class="lodging spa-info">
+                    <div class="spa-detail__lead">
+                        <p>
+                            At HOTEL THE MITSUI KYOTO we have prepared a set of unique SPA treatments, including body treatments featuring original massage oils.
+                        </p>
+                        <p>
+                            Based on the ancient principles of Japanese traditional Anma Massage – combined innovative facial treatments developed overseas – we have prepared a number of treatment options that focus on Ying/Yang Balance and the Five Elements (metal, wood, water,
+                            fire and earth). These traditional techniques, blended with innovative approaches, are what makes the SPA treatments on offer at HOTEL THE MITSUI KYOTO so special.
+                        </p>
+                        <p>
+                            Enjoy our SPA treatments together with a visit to the Thermal Spring and Private Onsen and embark on a truly pampering SPA journey that can only be experienced in Kyoto.
+                        </p>
+                        <p class="spa-detail__btn">
+                            <a href="" target="_blank" class="btn btn-book">Reservations</a>
+                        </p>
+                        <p class="spa-detail__tel">TEL. <span data-action="call" data-tel="+81754683125">+81 75 468 3125</span> <br class="sp-only">(Reservations for SPA treatments)</p>
+                        <hr class="hr-1">
+                        <table class="table-2">
+                            <tbody>
+                                <tr>
+                                    <th class="nowrap">Operating Hours</th>
+                                    <td class="w-full">10:00am to 10:00pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr class="hr-1">
+                        <ul class="list-files">
+                            <li class="list-files__item"><a href="https://my.ebook5.net/hotelthemitsui_kyoto/spa_menu/" target="_blank" class="list-files__link"><span>SPA Treatments Menu</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="restaurant-detail --promotion">
+                <div class="lodging restaurant-detail__inner">
+                    <h3 class="section-sectitle restaurant-detail__head">Promotion</h3>
+                    <div class="restaurant-tabs">
+                        <div class="promotion-slider">
+                            <div class="promotion-slider__inner">
+                                <div class="promotion-slider__item">
+                                    <div class="promotion-slider__col-1">
+                                        <figure class="promotion-slider__image">
+                                            <picture>
+                                                <img src="./images/spa1.webp" alt=""></picture>
+                                        </figure>
+                                    </div>
+                                    <div class="promotion-slider__col-2">
+                                        <h3 class="section-sectitle promotion-slider__head">Mahada ALAENA Treatment</h3>
+                                        <p class="promotion-slider__btn">
+                                            <button data-target="3" class="btn btn-book" tabindex="0">Reservations</button>
+                                        </p>
+                                        <p class="promotion-slider__info">
+                                            ＜2022.12.1（Thu） － 2023.1.14（Sat）＞
+                                        </p>
+                                        <div class="promotion-slider__desc richtext">
+                                            <p>The first stage of this treatment is an ALAENA scrub that removes excess impurities and dead skin cells, leaving the skin soft and smooth.After the scrub has been applied, a rich moisturizing balm is used to
+                                                treat the entire body.
+                                                <br>This is a special treatment from ALAENA for patrons who want to start the year with a refreshed body and relaxed mind.</p>
+                                            <p>75min ￥28,500 （Scrub +Body）<br>
+                                            </p>
+                                            <p>105min ￥41,300 （Scrub +Body + Facial</p>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="thermal thermal--2">
+                <div class="thermal__inner lodging">
+                    <h2 class="section-sectitle thermal__head">SPA Treatments</h2>
+                    <div class="thermal-layout-2">
+                        <div class="thermal-layout-2__inner">
+                            <div class="thermal-layout-2__col-1">
+                                <h3 class="thermal-layout-2__head">When you visit the SPA</h3>
+                            </div>
+                            <div class="thermal-layout-2__col-2">
+                                <p>
+                                    We ask you to arrive a full 15 minutes before your SPA appointment, so that you are rested and relaxed prior to your session. Should you wish to make use of the Thermal Spring before your treatment, we recommend you arrive a full hour prior to the appointed
+                                    time. Please be aware that should you arrive later than the session start time, we may have to shorten the treatment program.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thermal-layout-2">
+                        <div class="thermal-layout-2__inner">
+                            <div class="thermal-layout-2__col-1">
+                                <h3 class="thermal-layout-2__head">
+                                    SPA Treatments and Clientele
+                                </h3>
+                            </div>
+                            <div class="thermal-layout-2__col-2">
+                                <p>
+                                    Guests staying at HOTEL THE MITSUI KYOTO as well as non-staying visitors may book treatment sessions at the SPA.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thermal-layout-2">
+                        <div class="thermal-layout-2__inner">
+                            <div class="thermal-layout-2__col-1">
+                                <h3 class="thermal-layout-2__head">Cancellation Policy</h3>
+                            </div>
+                            <div class="thermal-layout-2__col-2">
+                                <p>
+                                    We ask for at least 24 hours’ notice for any cancellations. In the event that an appointment is cancelled with less than 24 hours’ notice, please note that the SPA will charge a 100% cancellation fee.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thermal-layout-2">
+                        <div class="thermal-layout-2__inner">
+                            <div class="thermal-layout-2__col-1">
+                                <h3 class="thermal-layout-2__head">
+                                    Health and Safety of Our Clientele
+                                </h3>
+                            </div>
+                            <div class="thermal-layout-2__col-2">
+                                <p>
+                                    When making a reservation for a SPA treatment, we ask all clients to inform SPA staff as their current health status, any medical issues they may be experiencing as well as any allergies, etc. Depending on the health condition of the client, some treatment
+                                    options may not be appropriate. Our therapists have received full training, so please make the most of their knowledge and experience. Regretfully we do not accept reservations from clients in the early stages of pregnancy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thermal-layout-2">
+                        <div class="thermal-layout-2__inner">
+                            <div class="thermal-layout-2__col-1">
+                                <h3 class="thermal-layout-2__head">
+                                    Regarding the Storage of Valuable Items at the SPA
+                                </h3>
+                            </div>
+                            <div class="thermal-layout-2__col-2">
+                                <p>
+                                    Please note that there are no storage facilities suitable for valuable items at the THERMAL SPRING SPA. We ask guests to leave items either at one of the Safety Deposit Boxes at the Hotel Reception, or in the safe located in their guest room. HOTEL THE
+                                    MITSUI KYOTO and the SPA shall accept no responsibility for the loss or theft of any valuable item.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thermal-layout-2">
+                        <div class="thermal-layout-2__inner">
+                            <div class="thermal-layout-2__col-1">
+                                <h3 class="thermal-layout-2__head">Age Restrictions</h3>
+                            </div>
+                            <div class="thermal-layout-2__col-2">
+                                <p>
+                                    Please note that all SPA treatments are available for clients aged 16 and over. Clients aged between 16 and 18 will require a parent or guardian to sign a waiver prior to any SPA treatment session. Please inquire at the SPA reception for more details.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thermal-layout-2">
+                        <div class="thermal-layout-2__inner">
+                            <div class="thermal-layout-2__col-1">
+                                <h3 class="thermal-layout-2__head">Etiquette</h3>
+                            </div>
+                            <div class="thermal-layout-2__col-2">
+                                <p>
+                                    The THERMAL SPRING SPA is a place for restful relaxation. As such, we ask our clients to refrain from using their mobile phones and cameras in the SPA area. Please note that the entire SPA facility is strictly non-smoking. In the event of behavior by
+                                    a client seen as contrary to these regulations, staff may ask said client to leave the SPA area.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <div class="footer-contact__inner">
+                    <div class="footer-contact__col-1">
+                        <h2 class="footer-contact__head">Contact Us</h2>
+                    </div>
+                    <div class="footer-contact__col-2">
+                        <p>
+                            Please feel free to contact us regarding inquiries about the following:
+                            <br>TEL. <span data-action="call" data-tel="+81754683155">+81 75 468 3155</span> (Booking a stay with us)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-nav">
+                <div class="footer-nav__inner container">
+                    <div class="footer-nav__col">
+                        <ul class="footer-nav__list-1">
+                            <li><a href="./rooms.html" class="">Rooms and Suites</a>
+                                <ul class="footer-nav__list-2">
+                                    <li><a href="">Suites</a></li>
+                                    <li><a href="">Rooms</a></li>
+                                    <li><a href="./service.html">Accommodation Services</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <ul class="footer-nav__list-1">
+                            <li><a href="./restaurant.html" class="">Restaurants</a>
+                                <ul class="footer-nav__list-2">
+                                    <li><a href="" class="">TOKI</a></li>
+                                    <li><a href="" class="">YUI</a></li>
+                                    <li><a href="" class="">FORNI</a></li>
+                                    <li><a href="" class="">THE GARDEN BAR</a></li>
+                                    <li><a href="" class="">SHIKI-NO-MA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <ul class="footer-nav__list-1">
+                            <li><a href="./spa.html" class="">SPA</a>
+                                <ul class="footer-nav__list-2">
+                                    <li><a href="" class="">SPA Treatments</a></li>
+                                    <li><a href="" class="">Thermal Spring</a></li>
+                                    <li><a href="" class="">Private Onsen</a></li>
+                                    <li><a href="" class="">Gym</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <ul class="footer-nav__list-1">
+                            <li><a href="./about.html" class="">About</a>
+                                <ul class="footer-nav__list-2">
+                                    <li><a href="" class="">The Kajiimiya Gate</a></li>
+                                    <li><a href="" class="">The Garden</a></li>
+                                    <li><a href="" class="">Designers/Artists</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <ul class="footer-nav__list-1">
+                            <li><a href="./experience.html" class="">Experiences</a></li>
+                            <li><a href="./location.html" class="">Location</a></li>
+                            <li><a href="./news.html" class="">What’s New</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <ul class="footer-nav__list-2">
+                            <li><a href="" class="">Personal Information Protection Policy</a></li>
+                            <li><a href="" class="">Concerning Protection of Personal Information</a></li>
+                            <li><a href="" class="">Terms of Site Use</a></li>
+                            <li><a href="" class="">Social Media Policy</a></li>
+                            <li><a href="" class="">Statement based on the Specified Commercial Transaction Law</a></li>
+                            <li><a href="" class="">Terms and Conditions for Accommodation Contracts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <ul class="footer-nav__list-1">
+                            <li><a href="">Japanese</a></li>
+                        </ul>
+                        <ul class="footer__sns">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="./images/icon-instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="./images/icon-facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__inner-1 container">
+                <p class="footer__star">
+                    <a href=" target=" _blank ">
+                        <img src="./images/icon-star.svg " alt=" ">
+                    </a>
+                </p>
+                <p class="footer__logo ">
+                    <picture>
+                       <img src="./images/title-ft.svg " alt=" "></picture>
+                </p>
+                <p class="footer__contact ">
+                    <a href="./contact.html " class=" ">Contact</a>
+                </p>
+                <p class="footer__tel ">
+                    TEL.
+                    <em><span data-action="call " data-tel="+81754683100 ">+81 75 468 3100</span></em></p>
+                <p class="footer__address ">
+                    284 Nijoaburanokoji-cho, Aburano-koji St. Nijo-sagaru, Nakagyo-ku, Kyoto 604-0051
+                </p>
+                <ul class="footer__list sp-only ">
+                    <li><a href=" " class=" ">Personal Information Protection Policy</a></li>
+                    <li><a href=" " class=" ">Concerning Protection of Personal Information</a></li>
+                    <li><a href=" " class=" ">Terms of Site Use</a></li>
+                    <li><a href=" " class=" ">Social Media Policy</a></li>
+                    <li><a href=" " class=" ">Statement based on the Specified Commercial Transaction Law</a></li>
+                    <li><a href=" " class=" ">Terms and Conditions for Accommodation Contracts</a></li>
+                </ul>
+            </div>
+            <div class="footer__inner-2 ">
+                <p class="footer__logo-2 ">
+                    <a href=" " target="_blank ">
+                        <img src="./images/mfg-logo.svg " alt=" ">
+                    </a>
+                </p> 
+                <p class="footer__copyright ">
+                    © 2021 Mitsui Fudosan Resort Management Co., Ltd.
+                </p>
+            </div>
+        </footer>
+
+    </div>
+    <a href=" " id="backtotop "><i class="fa-solid fa-arrow-up-long "></i></a>
+
+    <script src="./lib/js/jquery-3.6.0.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js "></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js "></script>
+
+    <script src="./lib/js/style.js "></script>
+    <script src="./lib/js/slide.js "></script>
+</body>
+
+</html>

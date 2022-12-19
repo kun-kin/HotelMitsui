@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "Van Dijck MT W00 Regular";
+    src: url(../font/VanDijck-Regular.ttf);
+}
+
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'restaurant';
+@import 'spa';
+@import 'about';
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 24px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+:root {
+    --thm-font: "Van Dijck MT W00 Regular", serif;
+    --thm-blue-color: #0a61a1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--thm-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 150%;
+    letter-spacing: .03em;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+a {
+    &:hover,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.btn {
+    display: flex;
+    width: 180px;
+    border: 1px solid #190e0a;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 100%;
+    padding: 13px 0;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition-property: all;
+    transition-duration: .8s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    margin: auto;
+    &.-black {
+        color: #190e0a;
+        &:hover {
+            background-color: #190e0a;
+            color: #fff;
+        }
+    }
+    &-more {
+        &:hover {
+            background-color: #190e0a;
+            color: #fff;
+        }
+    }
+    &-book {
+        background-color: #190e0a;
+        color: #fff;
+        &:hover {
+            background-color: #fff;
+            color: #190e0a;
+        }
+    }
+}
+
+.section-sectitle {
+    font-family: var(--thm-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    @media(max-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.wrap-more {
+    margin: 0 0 19px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--thm-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 150%;
+}
+
+.slick-dots {
+    li {
+        button {
+            &::before {
+                font-size: 8px;
+            }
+        }
+    }
+}
